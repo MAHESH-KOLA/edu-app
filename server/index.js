@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 // Configure CORS
 app.use(cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL
+    origin: 'https://imaginative-melba-45d4ac.netlify.app'
 }));
 
 app.use(express.json());
