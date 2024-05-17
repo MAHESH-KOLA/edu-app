@@ -1,0 +1,93 @@
+.postpage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.edit-delete-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.edit-icon,
+.delete-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.posttitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.posttag {
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.time-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.time {
+  font-style: italic;
+  color: #666;
+}
+
+.edit-icon,
+.delete-icon {
+  margin-right: 10px;
+   margin-top: 50px;
+  cursor: pointer;
+}
+.postauthor {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.postimage img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.postdescription {
+  margin-bottom: 20px;
+}
+
+.postcontent {
+  margin-bottom: 20px;
+}
+
+.postbuttons {
+  display: flex;
+  justify-content: center;
+}
+
+.postbuttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.postbuttons button:hover {
+  background-color: #0056b3;
+}

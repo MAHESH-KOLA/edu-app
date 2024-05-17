@@ -1,0 +1,25 @@
+.yourprofile {
+  margin-top:60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.firstName {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3px;
+}
+.email {
+  margin-top:2px;
+}
+.btn{
+  display: flex;
+}
+.button {
+  width : 360px;
+  display: flex;
+  border : 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 25ps;
+}
