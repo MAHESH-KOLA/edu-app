@@ -3,7 +3,6 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const bodyParser = require('body-parser');
 const multer = require('multer');
-
 const jwt = require('jsonwebtoken');
 const cookieparser = require('cookie-parser');
 const fs = require('fs');
@@ -17,20 +16,17 @@ dotenv.config();
 
 // Middleware to parse incoming JSON requests
 app.use(bodyParser.json());
-
 app.use(cors({ credentials: true, origin: process.env.FRONTEND_URL }));
 app.use(express.json());
 app.use(cookieparser());
 
-
 const salt = bcrypt.genSaltSync(10);
 
 // Middleware for handling file uploads (using multer)
-// const uploadmiddleware = multer({ dest: 'uploads/' });
-const upload = multer({ dest: 'uploads/' }); 
-app.use('/uploads',express.static(__dirname + '/uploads/'))
+const upload = multer({ dest: 'uploads/' });
+app.use('/uploads', express.static(__dirname + '/uploads/'));
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.post('/register', async (req, res) => {
   const { firstname, email, password } = req.body;
